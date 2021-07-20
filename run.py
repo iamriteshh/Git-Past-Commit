@@ -16,7 +16,7 @@ def makeCommits (days : int):
         fileName = 'Log_'+str(day+'-'+month+'-'+year)+'.txt'
 
         logFile = open(fileName,"w+")
-        shutil.copy('C:\\Users\\rites\\Pictures\\log.txt', fileName)
+        shutil.copy('log.txt', fileName)
         logFile.write(str(day+'-'+month+'-'+year)+' '+str(random.randint(1, 1000)))
         logFile.close()
        
